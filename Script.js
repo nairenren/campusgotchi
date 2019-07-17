@@ -324,7 +324,7 @@ function lecture(){
 		var a = Math.floor((Math.random() * 10) + 1);
 		var b = Math.floor((Math.random() * 10) + 1);
 		var c = a + b;
-		window.alert ("Congrats for your intelligent ! Now, do this exam to advance to the next semester !");
+		window.alert ("You are ready for the test ! Do this exam to advance to the next semester !");
 		var answer = prompt(a + " + " +b+ "=" );
 		if(answer==c) {
 		window.alert ("Great, you've got the correct answer ! Congrats and be happy for your next semester ! ");
