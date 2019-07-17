@@ -1,6 +1,6 @@
 window.onload = function(){
 	document.getElementById("period").innerHTML = period;
-	document.getElementById("how").innerHTML = "+ To start the game, please select your character by clicking on the character sprite (click the arrow to switch between the available character).<br/>+ If the button turns blue, it means that you'll play as the male a character and you'll play as the female character if it turns green.<br/>+ Insert your name in the box (leaving it empty would instead use a default name for the character).<br/>+ Click PLAY to proceed";
+	document.getElementById("how").innerHTML = "+ To start the game, please select your character by clicking on the character sprite (click the arrow to switch between the available character).<br/>+ If the button turns blue, it means that you'll play as the male character and you'll play as the female character if it turns green.<br/>+ Insert your name in the box (leaving it empty would instead use a default name for the character).<br/>+ Click PLAY to proceed";
 	$("#loading").hide();
 	$("#girl").hide();
 	$("#char-select").hide();
@@ -324,22 +324,22 @@ function lecture(){
 		var a = Math.floor((Math.random() * 10) + 1);
 		var b = Math.floor((Math.random() * 10) + 1);
 		var c = a + b;
-		window.alert ("Congrats for your intelligent ! Now, do this exam to go to the next semester !");
+		window.alert ("Congrats for your intelligent ! Now, do this exam to advance to the next semester !");
 		var answer = prompt(a + " + " +b+ "=" );
 		if(answer==c) {
-		window.alert ("Great, you've got a correct answer ! Congrats and be happy for your next semester ! ");
+		window.alert ("Great, you've got the correct answer ! Congrats and be happy for your next semester ! ");
 		period += 1;
 		learn = 0;
 		}
 		
 		else if(answer!=c){
-			window.alert ("Whoops, you have a wrong answer. Go back to learn and try it later ! ");
+			window.alert ("Whoops, you have a wrong answer. Learn more and try again later ! ");
 			learn -=60;
 		}
 		
 		if(period == 8) document.getElementById("college").innerHTML = "Thesis";
 		document.getElementById("period").innerHTML = period;
-		if(period == 2 || period == 11 || period == 14) end = window.confirm("You have enough scores to be able to pass your scholarship program. Graduate?");
+		if(period == 2 || period == 9 || period == 11 || period == 14) end = window.confirm("You have enough scores to be able to pass your scholarship program. Graduate?");
 		if(end == true){
 			clearTimeout(interval_drain);
 			clearTimeout(interval_time);
