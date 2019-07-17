@@ -1,0 +1,535 @@
+body {
+	margin: 0 auto;
+	background-image: url('Assets/Background/pattern.png');
+	font-family: 'Sofia Pro';
+	color: #FFFFFF;
+}
+
+img {
+	width: 95%;
+}
+/*Title screen*/
+#start-screen {
+	width: 540px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tama {
+	width: 520px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	background-color: #656767;
+	text-align: center;
+	font-size: 50px;
+	border-left: 5px solid #FFFFFF;
+	border-right: 5px solid #FFFFFF;
+}
+
+#tama:hover {
+	cursor: pointer;
+}
+
+#start-screen p {
+	margin-top: 340px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#loading {
+	width: 380px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	border-top: 5px solid #656767;
+	border-bottom: 5px solid #656767;
+}
+
+#load-bar {
+	width: 0px;
+	height:65px;
+	background-color: #FFFFFF;
+	transition: all 2.5s;
+}
+/*Character Select screen*/
+#char-select {
+	width: 600px;
+	margin-top: 120px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#char-select p {
+	display: block;
+	text-align: center;
+	font-size: 50px;
+}
+
+#char-select p:hover {
+	cursor: default;
+}
+
+#char-box {
+	width: 350px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	left: 20px;
+}
+
+#left-button {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: -80px;
+	background-image: url('Assets/UI/left.png');
+}
+
+#right-button {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: -80px;
+	background-image: url('Assets/UI/right.png');
+}
+
+#boy {
+	width: 200px;
+	height: 220px;
+	display: inline-block;
+	background-image: url('Assets/Character/boy.png');
+	border-top: 5px solid #656767;
+	border-bottom: 5px solid #656767;
+}
+
+#boy:hover {
+	cursor: pointer;
+}
+
+#girl {
+	width: 200px;
+	height: 220px;
+	display: inline-block;
+	background-image: url('Assets/Character/girl.png');
+	border-top: 5px solid #656767;
+	border-bottom: 5px solid #656767;
+}
+
+#girl:hover {
+	cursor: pointer;
+}
+
+#name-input {
+	width: 200px;
+	margin: 0 auto;
+	position: relative;
+	left: 20px;
+}
+
+input {
+	width: 150px;
+	padding: 5px;
+	font-family: 'Sofia Pro';
+	color: #656767;
+	border: none;
+}
+
+input:focus {
+	border-top: 5px solid  #656767;
+	border-bottom: 5px solid  #656767;
+	transition: all 0.2s;
+}
+
+#button {
+	width: 75px;
+	margin: 10px auto;
+	padding: 5px 10px;
+	background-color: #656767;
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+	transition: all 0.4s;
+}
+
+#button:hover {
+	cursor: pointer;
+}
+
+#group {
+	width: 340px;
+	margin-left: 20px;
+	padding: 5px 0px 5px 0px;
+	position: absolute;
+	top: 0;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+#enak {
+	background-color: #656767;
+	text-align: center;
+}
+
+#enak:hover {
+	cursor: help;
+}
+
+#member {
+	line-height: 8px;
+}
+
+#member:hover {
+	cursor: pointer;
+}
+/*Game screen*/
+#ui-time {
+	width: 180px;
+	height: 100px;
+	position: absolute;
+	left: -5px;
+	padding-top: 8px;
+	background-color: #656767;
+	text-align: center;
+	font-size: 16px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+	z-index: 1;
+}
+
+#ui-time p {
+	font-size: 20px;
+	line-height: 12px;
+}
+
+#ui-time:hover {
+	cursor: pointer;
+}
+
+#side-menu {
+	width: 1200px;
+	height: 125px;
+	margin: 0 auto;
+	padding: 5px;
+	position: relative;
+	top: -50px;
+	text-align: center;
+	border-left: 5px solid #FFFFFF;
+	border-right: 5px solid #FFFFFF;
+}
+
+.menu {
+	width: 65px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-left: 10px;
+	padding: 75px 20px 10px 20px;
+	list-style: none;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+.menu:hover {
+	background-color: #656767;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+
+#ui-screen {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 20px;
+	border-left: 5px solid #FFFFFF;
+	border-right: 5px solid #FFFFFF;
+}
+
+#profile {
+	width: 260px;
+	display: inline-block;
+	margin-right: 20px;
+	position: relative;
+	top: -160px;
+}
+
+#username {
+	margin-bottom: 20px;
+	background-color: #656767;
+	text-align: center;
+	font-size: 18px;	
+	border-bottom: 5px solid #FFFFFF;
+	border-top: 5px solid #FFFFFF;
+}
+
+#status-bar {
+	width: 260px;
+	height: 250px;
+	padding: 0px 0px 0px 8px;
+	background-color: #656767;
+	border-bottom: 5px solid #FFFFFF;
+	border-top: 5px solid #FFFFFF;
+}
+
+.detail {
+	padding: 2px 5px;
+	position: absolute;
+	left: 0px;
+	font-size: 12px;
+	background-color: #656767;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+	z-index: 1;
+}
+
+#learn-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	background-image: url('Assets/UI/learn.png');
+}
+
+#learn-icon:hover {
+	cursor: help;
+}
+
+#intelligence-bar {
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	padding: 5px 0px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+#learn-level {
+	height: 30px;
+	display: inline-block;
+	transition: all 0.5s;
+}
+
+#study {
+	top: 31.5px;
+}
+
+#sleep-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	background-image: url('Assets/UI/energy.png');
+}
+
+#sleep-icon:hover {
+	cursor: help;
+}
+
+#energy-bar {
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	padding: 5px 0px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+#sleep-level {
+	height: 30px;
+	display: inline-block;
+	transition: all 0.5s;	
+}
+
+#rest {
+	top: 91.5px;
+}
+
+#fun-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	background-image: url('Assets/UI/mood.png');
+}
+
+#fun-icon:hover {
+	cursor: help;
+}
+
+#mood-bar {
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	padding: 5px 0px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;	
+}
+
+#fun-level {
+	height: 30px;
+	display: inline-block;
+	transition: all 0.5s;
+}
+
+#happy{
+	top: 151.5px;
+	left: 4.5px;
+}
+
+
+#meal-icon {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	background-image: url('Assets/UI/food.png');
+}
+
+#meal-icon:hover {
+	cursor: help;
+}
+
+#hunger-bar {
+	width: 200px;
+	height: 30px;
+	display: inline-block;
+	padding: 5px 0px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+#meal-level {
+	height: 30px;
+	display: inline-block;
+	transition: all 0.5s;
+}
+
+#eat {
+	top: 211.5px;
+}
+
+#screen {
+	width: 734px;
+	height: 480px;
+	display: inline-block;
+	border-radius: 20px;
+}
+
+#player {
+	display: inline-block;
+}
+
+#option {
+	width: 50px;
+	display: inline-block;
+}
+
+#setting {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	margin-top: 5px;
+	background-image: url('Assets/UI/option.png');
+}
+
+#setting:hover {
+	cursor: help;
+}
+
+#utility {
+	width: 50px;
+	display: inline-block;
+	margin-bottom: 8px;
+	padding-top: 8px;
+	background-color: #656767;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;
+}
+
+#pause {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url('Assets/UI/pause.png');
+}
+
+#pause:hover {
+	background-color: #c05034;
+	transition: all 0.6s;
+}
+
+#resume {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url('Assets/UI/start.png');
+}
+
+#resume:hover {
+	background-color: #c05034;
+	transition: all 0.6s;
+}
+
+#reset {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-image: url('Assets/UI/reset.png');
+}
+
+#reset:hover {
+	background-color: #c05034;
+	transition: all 0.6s;
+}
+
+#guide {
+	width: 400px;
+	margin: 20px auto;
+	padding: 5px 0px 5px 0px;
+	border-top: 5px solid #FFFFFF;
+	border-bottom: 5px solid #FFFFFF;	
+}
+
+#tips {
+	text-align: center;
+	background-color: #656767;	
+}
+
+#tips:hover {
+	cursor: help;	
+}
+/*Game Over screen*/
+#graduate {
+	width: 600px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	position: relative;
+	top: 30px;
+	text-align: center;
+	border-top: 5px solid #6daeb1;
+	border-bottom: 5px solid #6daeb1;
+}
+	
+#graduate:hover {
+	cursor: pointer;
+}
+
+#graduate span {
+	padding: 0px 5px;
+	font-size: 48px;
+	background-color: #656767;
+}
+
+#over {
+	width: 500px;
+	margin: 0 auto;
+	position: relative;
+	top: 100px;
+	text-align: center;
+	font-size: 60px;
+}

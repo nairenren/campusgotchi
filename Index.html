@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CampusGotchi</title>
+		<link rel="stylesheet" href="Style.css"/>
+		<link rel="icon" href="Assets/page-icon.png"/>
+		<script src="jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="Script.js"></script>
+		<audio autoplay loop>
+			<source type="audio/mp3" src="Assets/beneath-the-sun.mp3">
+		</audio>
+	</head>
+	
+	<body>
+		<!--Title Screen-->
+		<div id="start-screen">
+			<div id="tama">-CAMPUSGOTCHI-</div>
+			<p>Press any key to Continue</p>
+		</div>
+		<div id="loading">
+			<div id="load-bar"></div>
+		</div>
+		<!--Character Select Screen-->
+		<div id="char-select">
+			<p>Select Your Character</p>
+			<div id="char-box">
+				<span id="left-button"></span>
+				<div id="boy"></div>
+				<div id="girl"></div>
+				<span id="right-button"></span>
+			</div>
+		</div>
+		<div id="name-input">
+			<input id="name" type="text" value="" autocomplete="off" placeholder="Insert Your Name"/>	
+		</div>
+		<div id="button">PLAY</div>
+		<div id="group">
+			<div id="enak">PROJECT MEMBERS</div>
+			<div id="member">
+				<p>2016102267 - Ferdinandus Fidel Putra</p>
+				<p>2016102586 - Mardika Muhammad Mustaqim</p>
+				<p>2016102661 - Rangga Eka Nanda</p>		
+			</div>
+		</div>
+		<!--Game Screen-->
+		<div id="ui-time">
+			<span id="day"></span>
+			<span id="clock"></span>
+			<p>SEMESTER</p>
+			<p id="period"></p>
+		</div>
+		<ul id="side-menu">
+			<li class="menu" id="college">Class</li>
+			<li class="menu">Read</li>
+			<li class="menu">Discuss</li>
+			<li class="menu">Sleep</li>
+			<li class="menu">Hangout</li>
+			<li class="menu">Hunger</li>		
+		</ul>
+		<div id="ui-screen">
+			<div id="profile">
+				<div id="username"></div>
+				<div id="status-bar">
+					<p class="detail" id="study">Learn Bar</p>
+					<span id="learn-icon"></span>
+					<div id="intelligence-bar">
+						<span id="learn-level"></span>
+					</div>
+					<p  class="detail" id="rest">Energy Bar</p>
+					<span id="sleep-icon"></span>
+					<div id="energy-bar">
+						<span id="sleep-level"></span>
+					</div>
+					<p  class="detail" id="happy">Fun Bar</p>
+					<span id="fun-icon"></span>
+					<div id="mood-bar">
+						<span id="fun-level"></span>
+					</div>
+					<p  class="detail" id="eat">Hunger Bar</p>
+					<span id="meal-icon"></span>
+					<div id="hunger-bar">
+						<span id="meal-level"></span>
+					</div>
+				</div>
+			</div>
+			<div id="screen">
+				<div id="player"></div>
+			</div>
+			<div id="option">
+				<div id="utility">
+					<span id="pause"></span>
+					<span id="resume"></span>
+					<span id="reset"></span>
+				</div>
+				<div id="setting"></div>
+			</div>
+		</div>
+		<div id="guide">
+			<div id="tips">HOW TO PLAY</div>
+			<p id="how"></p>
+		</div>
+		<!--Game Over Screen-->
+		<div id="graduate">
+			<span>THANK YOU FOR PLAYING</span>
+		</div>
+		<div id="over">
+			<div id="lose"></div>
+			<p>GAME OVER</p>
+		</div>	
+	</body>
+</html>
